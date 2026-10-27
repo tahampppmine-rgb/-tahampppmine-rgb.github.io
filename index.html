@@ -1,10 +1,127 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Taha Mohammadpour | Developer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-jakarta: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
-  <div>hi</div>
+
+  <body
+    class="min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-indigo-950 font-jakarta text-slate-200"
+  >
+    <!-- Ambient background glow -->
+    <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div
+        class="absolute -left-24 top-10 size-96 rounded-full bg-amber-500/15 blur-3xl"
+      ></div>
+      <div
+        class="absolute -right-24 top-1/3 size-96 rounded-full bg-indigo-500/20 blur-3xl"
+      ></div>
+    </div>
+
+    <header id="home" class="sticky top-0 z-50 flex justify-center px-4 py-8">
+      <nav class="flex flex-col items-center gap-4 md:flex-row md:gap-8">
+        <a
+          href="#home"
+          class="flex items-center gap-2 text-2xl font-extrabold text-white"
+        >
+          <span class="text-3xl text-amber-400">✦</span>
+          <span>Taha.dev</span>
+        </a>
+
+        <div
+          class="flex items-center gap-5 rounded-full bg-white/5 px-6 py-4 shadow-md backdrop-blur md:gap-8 md:px-12 md:py-5 border border-white/10"
+        >
+          <a
+            href="#home"
+            class="text-slate-200 hover:text-amber-400 transition md:text-lg"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-slate-200 hover:text-amber-400 transition md:text-lg"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="text-slate-200 hover:text-amber-400 transition md:text-lg"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-slate-200 hover:text-amber-400 transition md:text-lg"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div
+      class="mx-4 mb-6 max-w-4xl rounded-3xl bg-white/5 px-6 py-16 text-center shadow-xl backdrop-blur md:mx-auto border border-white/10"
+    >
+      <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-6xl">
+        Crafting Digital <span class="text-amber-400">Experiences</span>
+      </h1>
+      <p class="mt-6 text-lg text-slate-400 leading-relaxed">
+        I'm Taha Mohammadpour, a frontend enthusiast focused on building clean,
+        user-centric, and high-performance web interfaces. I turn complex
+        problems into simple, elegant code.
+      </p>
+      <div class="mt-10 flex justify-center gap-4">
+        <a
+          href="#projects"
+          class="rounded-full bg-amber-400 px-8 py-3 font-bold text-slate-900 transition hover:bg-amber-300"
+        >
+          Explore Projects
+        </a>
+      </div>
+    </div>
+
+    <div class="mx-auto grid max-w-5xl gap-4 px-4 pb-16 md:grid-cols-2">
+      <!-- My Journey -->
+      <div
+        id="about"
+        class="scroll-mt-8 rounded-3xl bg-white/5 p-6 shadow-lg backdrop-blur border border-white/10"
+      >
+        <h2 class="text-2xl font-bold text-white">My Journey</h2>
+
+        <div class="mt-5 rounded-xl border-l-4 border-amber-400 bg-white/5 p-4">
+          <p class="text-sm font-semibold text-amber-300">2024</p>
+          <p class="font-semibold text-white">Deep Dive into Web</p>
+          <p class="text-sm text-slate-400">
+            Mastering core HTML/CSS structures.
+          </p>
+        </div>
+
+        <div
+          class="mt-5 rounded-xl border-l-4 border-indigo-400 bg-white/5 p-4"
+        >
+          <p class="text-sm font-semibold text-indigo-300">2025</p>
+          <p class="font-semibold text-white">Modern Stack</p>
+          <p class="text-sm text-slate-400">
+            Building with JS and Tailwind ecosystem.
+          </p>
+        </div>
+      </div>
+
+      <!-- My Toolbox -->
+      <div
+        class="rounded-3xl bg-white/5 p-6 shadow-lg backdrop-blur border border-white/10"
+      >
+        <h2 class="text-2xl font-bold text-white">My Toolb</h2>
+      </div>
+    </div>
+  </body>
 </html>
